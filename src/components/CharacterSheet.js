@@ -4,7 +4,8 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import '../tabs.css';
 
-// 1. Importe os componentes do Accordion
+import { FaUser, FaScroll, FaBookDead, FaShoppingBag } from 'react-icons/fa';
+
 import {
     Accordion,
     AccordionItem,
@@ -68,10 +69,24 @@ const CharacterSheet = ({ characterData, onUpdate, onBack, spellbook, onAddNewSp
       
       <Tabs className="mt-4">
         <TabList>
-          <Tab>Ficha Principal</Tab>
-          <Tab>Personalidade</Tab>
-          <Tab>Inventário</Tab>
-          <Tab>Magias</Tab>
+        <TabList>
+          <Tab title="Ficha Principal">
+            <FaUser className="inline-block mr-0 md:mr-2" />
+            <span className="hidden md:inline">Principal</span>
+          </Tab>
+          <Tab title="Personalidade">
+            <FaScroll className="inline-block mr-0 md:mr-2" />
+            <span className="hidden md:inline">Personalidade</span>
+          </Tab>
+          <Tab title="Inventário">
+            <FaShoppingBag className="inline-block mr-0 md:mr-2" />
+            <span className="hidden md:inline">Inventário</span>
+          </Tab>
+          <Tab title="Magias">
+            <FaBookDead className="inline-block mr-0 md:mr-2" />
+            <span className="hidden md:inline">Magias</span>
+          </Tab>
+        </TabList>
         </TabList>
 
         <TabPanel>
