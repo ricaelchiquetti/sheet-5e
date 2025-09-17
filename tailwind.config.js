@@ -1,12 +1,21 @@
-/** @type {import('tailwindcss').Config} */
+// tailwind.config.js
+
+// A linha que faltava está aqui:
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}", // Diz ao Tailwind para olhar todos os arquivos dentro da pasta src
+    "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'sans': ['Lora', ...defaultTheme.fontFamily.sans],
+        'display': ['Merriweather', 'serif'],
+      },
+    },
   },
   plugins: [
-    require('@tailwindcss/forms'), // Ativa o plugin para estilizar checkboxes e outros formulários
+    require('@tailwindcss/forms'),
   ],
 }

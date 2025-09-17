@@ -1,0 +1,53 @@
+/* src/tabs.css */
+
+/* Estiliza a lista de abas (a barra que contém os botões) */
+.react-tabs__tab-list {
+  border-bottom: 2px solid #000;
+  margin: 0 0 20px;
+  padding: 0;
+  display: flex;
+}
+
+/* Estiliza cada aba (o botão) */
+.react-tabs__tab {
+  display: inline-block;
+  border: 2px solid transparent;
+  border-bottom: none;
+  bottom: -2px;
+  position: relative;
+  list-style: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #333;
+  background: #e0e0e0;
+  border-radius: 5px 5px 0 0;
+  margin-right: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Estiliza a aba que está selecionada/ativa */
+.react-tabs__tab--selected {
+  background: #fff; /* Fundo branco para parecer conectado ao conteúdo */
+  border-color: #000;
+  color: #a52a2a; /* Vermelho escuro para o texto */
+  top: 1px;
+}
+
+/* Estiliza o foco na aba (para acessibilidade) */
+.react-tabs__tab:focus {
+  box-shadow: 0 0 5px #a52a2a;
+  border-color: #a52a2a;
+  outline: none;
+}
+
+/* Estiliza o painel de conteúdo da aba */
+.react-tabs__tab-panel {
+  display: none;
+}
+
+/* Mostra o painel de conteúdo da aba que está selecionada */
+.react-tabs__tab-panel--selected {
+  display: block;
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "id": "std-magic-missile",
+    "name": "Mísseis Mágicos",
+    "level": 1,
+    "school": "Evocação",
+    "casting_time": "1 Ação",
+    "range": "36 metros",
+    "components": ["V", "S"],
+    "duration": "Instantânea",
+    "description": "Você cria três dardos brilhantes de energia mágica...",
+    "at_higher_levels": "Quando você conjura esta magia usando um espaço de magia de 2° nível ou superior..."
+  },
+  {
+    "id": "std-mage-hand",
+    "name": "Mãos Mágicas",
+    "level": 0,
+    "school": "Conjuração",
+    "casting_time": "1 Ação",
+    "range": "9 metros",
+    "components": ["V", "S"],
+    "duration": "1 minuto",
+    "description": "Uma mão espectral flutuante aparece num ponto..."
+  },
+  {
+    "id": "std-fireball",
+    "name": "Bola de Fogo",
+    "level": 3,
+    "school": "Evocação",
+    "casting_time": "1 Ação",
+    "range": "45 metros",
+    "components": ["V", "S", "M (uma bola de guano de morcego e enxofre)"],
+    "duration": "Instantânea",
+    "description": "Um feixe de luz amarelada parte de seu dedo indicador...",
+    "at_higher_levels": "Quando você conjura esta magia usando um espaço de magia de 4° nível ou superior..."
+  }
+]
