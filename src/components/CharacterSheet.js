@@ -69,7 +69,6 @@ const CharacterSheet = ({ characterData, onUpdate, onBack, spellbook, onAddNewSp
       
       <Tabs className="mt-4">
         <TabList>
-        <TabList>
           <Tab title="Ficha Principal">
             <FaUser className="inline-block mr-0 md:mr-2" />
             <span className="hidden md:inline">Principal</span>
@@ -86,7 +85,6 @@ const CharacterSheet = ({ characterData, onUpdate, onBack, spellbook, onAddNewSp
             <FaBookDead className="inline-block mr-0 md:mr-2" />
             <span className="hidden md:inline">Magias</span>
           </Tab>
-        </TabList>
         </TabList>
 
         <TabPanel>
